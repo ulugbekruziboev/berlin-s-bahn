@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="e737f5f4-20c7-4c06-9def-3bfcbe927f4d" data-root-id="1105"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1206">
+          {"c14171b7-dae8-4ac8-a363-9a9db83f8384":{"roots":{"references":[{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"delta"},"width":{"value":5},"x":{"field":"years"}},"id":"1133","type":"VBar"},{"attributes":{},"id":"1121","type":"BasicTicker"},{"attributes":{"below":[{"id":"1116"}],"center":[{"id":"1119"},{"id":"1123"}],"left":[{"id":"1120"}],"plot_height":500,"plot_width":1200,"renderers":[{"id":"1134"}],"title":{"id":"1106"},"toolbar":{"id":"1127"},"x_range":{"id":"1108"},"x_scale":{"id":"1112"},"y_range":{"id":"1110"},"y_scale":{"id":"1114"}},"id":"1105","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"tooltips":"Over @years years: @delta stations"},"id":"1124","type":"HoverTool"},{"attributes":{"text":"S-Bahn stations electrification time delta count"},"id":"1106","type":"Title"},{"attributes":{"source":{"id":"1104"}},"id":"1135","type":"CDSView"},{"attributes":{},"id":"1140","type":"BasicTickFormatter"},{"attributes":{},"id":"1112","type":"LinearScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1124"},{"id":"1125"},{"id":"1126"}]},"id":"1127","type":"Toolbar"},{"attributes":{"axis":{"id":"1120"},"dimension":1,"ticker":null},"id":"1123","type":"Grid"},{"attributes":{"data_source":{"id":"1104"},"glyph":{"id":"1132"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1133"},"selection_glyph":null,"view":{"id":"1135"}},"id":"1134","type":"GlyphRenderer"},{"attributes":{"axis":{"id":"1116"},"ticker":null},"id":"1119","type":"Grid"},{"attributes":{"data":{"delta":[57,12,13,25,42,21,8,3,13,2,1,0],"years":[0,10,20,30,40,50,60,70,80,90,100,110]},"selected":{"id":"1142"},"selection_policy":{"id":"1141"}},"id":"1104","type":"ColumnDataSource"},{"attributes":{},"id":"1141","type":"UnionRenderers"},{"attributes":{"formatter":{"id":"1140"},"ticker":{"id":"1121"}},"id":"1120","type":"LinearAxis"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"top":{"field":"delta"},"width":{"value":5},"x":{"field":"years"}},"id":"1132","type":"VBar"},{"attributes":{},"id":"1114","type":"LinearScale"},{"attributes":{},"id":"1126","type":"WheelZoomTool"},{"attributes":{},"id":"1125","type":"PanTool"},{"attributes":{},"id":"1110","type":"DataRange1d"},{"attributes":{},"id":"1142","type":"Selection"},{"attributes":{},"id":"1138","type":"BasicTickFormatter"},{"attributes":{},"id":"1117","type":"BasicTicker"},{"attributes":{},"id":"1108","type":"DataRange1d"},{"attributes":{"formatter":{"id":"1138"},"ticker":{"id":"1117"}},"id":"1116","type":"LinearAxis"}],"root_ids":["1105"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1206').textContent;
+                  var render_items = [{"docid":"c14171b7-dae8-4ac8-a363-9a9db83f8384","root_ids":["1105"],"roots":{"1105":"e737f5f4-20c7-4c06-9def-3bfcbe927f4d"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
