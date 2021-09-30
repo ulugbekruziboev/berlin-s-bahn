@@ -1,4 +1,3 @@
-Code and database dump# berlin-s-bahn
 S-Bahn Berlin project. It contains an interactive map of the history of the development of the Berlin S-Bahn network and some analysis behind the data.
 
 The intention of the project is purely educational and thus non-commercial. 
